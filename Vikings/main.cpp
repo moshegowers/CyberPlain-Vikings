@@ -8,7 +8,7 @@ void main(void)
 	for (size_t i = 0; i < 10; i++)
 	{
 		vikingsArray[i] = new Vikings;
-		std::cout << vikingsArray[i]->checkFightOrFlight() << std::endl;
+		std::cout << (vikingsArray[i]->checkFightOrFlight() ? "Fight" : "Flight") << std::endl;
 	}
 
 	delete vikingsArray[5];
@@ -16,7 +16,7 @@ void main(void)
 	{
 		if (vikingsArray[i] != NULL)
 		{
-			std::cout << vikingsArray[i]->checkFightOrFlight() << std::endl;
+			std::cout << (vikingsArray[i]->checkFightOrFlight() ? "Fight" : "Flight") << std::endl;
 		}
 	}
 
@@ -25,7 +25,7 @@ void main(void)
 	{
 		if (vikingsArray[i] != NULL)
 		{
-			std::cout << vikingsArray[i]->checkFightOrFlight() << std::endl;
+			std::cout << (vikingsArray[i]->checkFightOrFlight() ? "Fight" : "Flight") << std::endl;
 		}
 	}
 }
